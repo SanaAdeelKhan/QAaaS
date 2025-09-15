@@ -1,0 +1,14 @@
+# Prevent line ending conversion for node_modules
+frontend/node_modules/** -text
+backend/node_modules/** -text
+
+# Treat all other text files normally
+* text=auto
+
+# Ensure scripts use LF (optional, helps cross-platform)
+*.sh text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf

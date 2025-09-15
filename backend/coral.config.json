@@ -1,0 +1,14 @@
+{
+  "project": "QAaaS",
+  "version": "1.0.0",
+  "agents": [
+    { "name": "repoClonerAgent", "entry": "./agents/repoClonerAgent.js" },
+    { "name": "unitTestAgent", "entry": "./agents/unitTestAgent.js" },
+    { "name": "integrationAgent", "entry": "./agents/integrationAgent.js" },
+    { "name": "securityAgent", "entry": "./agents/securityAgent.js" },
+    { "name": "fuzzAgent", "entry": "./agents/fuzzAgent.js" },
+    { "name": "voiceQAagent", "entry": "./agents/voiceQAagent.js" },
+    { "name": "mistralBugReasoningAgent", "entry": "./agents/mistralBugReasoningAgent.js" },
+    { "name": "aggregatorAgent", "entry": "./agents/aggregatorAgent.js" }
+  ]
+}
