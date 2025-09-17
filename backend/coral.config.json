@@ -1,14 +1,47 @@
 {
-  "project": "QAaaS",
   "version": "1.0.0",
-  "agents": [
-    { "name": "repoClonerAgent", "entry": "./agents/repoClonerAgent.js" },
-    { "name": "unitTestAgent", "entry": "./agents/unitTestAgent.js" },
-    { "name": "integrationAgent", "entry": "./agents/integrationAgent.js" },
-    { "name": "securityAgent", "entry": "./agents/securityAgent.js" },
-    { "name": "fuzzAgent", "entry": "./agents/fuzzAgent.js" },
-    { "name": "voiceQAagent", "entry": "./agents/voiceQAagent.js" },
-    { "name": "mistralBugReasoningAgent", "entry": "./agents/mistralBugReasoningAgent.js" },
-    { "name": "aggregatorAgent", "entry": "./agents/aggregatorAgent.js" }
-  ]
+  "project": "QAaaS",
+  "description": "Quality-Assurance-As-A-Service (QAaaS) multi-agent system configuration for Coral Protocol",
+  "agents": {
+    "repoClonerAgent": {
+      "type": "function",
+      "path": "./agents/repoClonerAgent.js",
+      "description": "Clones repositories from GitHub/GitLab for testing pipeline"
+    },
+    "unitTestAgent": {
+      "type": "function",
+      "path": "./agents/unitTestAgent.js",
+      "description": "Runs unit tests on cloned repositories"
+    },
+    "integrationAgent": {
+      "type": "function",
+      "path": "./agents/integrationAgent.js",
+      "description": "Handles integration testing between different services and modules"
+    },
+    "securityAgent": {
+      "type": "function",
+      "path": "./agents/securityAgent.js",
+      "description": "Performs security scanning using tools like OWASP/ZAP or npm audit"
+    },
+    "fuzzAgent": {
+      "type": "function",
+      "path": "./agents/fuzzAgent.js",
+      "description": "Executes fuzz testing to identify unexpected behaviors and vulnerabilities"
+    },
+    "voiceQAagent": {
+      "type": "function",
+      "path": "./agents/voiceQAagent.js",
+      "description": "Handles voice-based QA interaction using ElevenLabs"
+    },
+    "mistralBugReasoningAgent": {
+      "type": "function",
+      "path": "./agents/mistralBugReasoningAgent.js",
+      "description": "Analyzes bugs with MISTRAL LLM and provides reasoning + fix suggestions"
+    },
+    "aggregatorAgent": {
+      "type": "function",
+      "path": "./agents/aggregatorAgent.js",
+      "description": "Aggregates results from all QA agents into a unified report"
+    }
+  }
 }
